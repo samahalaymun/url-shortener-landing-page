@@ -186,9 +186,11 @@ a {
     align-items: flex-start;
     gap: 15px;
 }
-.shorten-form .form-wrapper .form-control{
+
+.shorten-form .form-wrapper .form-control {
     width: 100%;
 }
+
 .shorten-form .form-wrapper .form-control input {
     flex: 0 1 85%;
     width: 100%;
@@ -216,7 +218,7 @@ a {
 
 .shorten-result {
     margin-top: 60px;
-    
+
 }
 
 .shortened-item {
@@ -587,6 +589,54 @@ a {
     }
 }
 
+@media (max-width: 1000px) {
+    .shorten-form .form-wrapper .form-control {
+        flex: 0 0 80%;
+        width: 100%;
+        border-radius: 7px;
+
+    }
+
+    .shorten-form .form-wrapper .form-control input {
+        border-radius: 7px;
+    }
+
+    .shorten-form .form-wrapper button {
+        flex: 0 0 20%;
+        border-radius: 7px;
+    }
+
+    .more-features {
+        padding: 70px 0;
+    }
+
+    .more-features-content {
+        flex-wrap: wrap;
+    }
+
+    .more-features-content::after {
+        content: "";
+        top: 0;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+        width: 7px;
+    }
+
+    .content-item h3 {
+        font-size: 24px;
+    }
+
+    .content-item p {
+        font-size: 14px;
+    }
+
+    .content-item .item-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width: 600px) {
     .shorten-form {
         padding: 15px;
@@ -599,10 +649,12 @@ a {
         flex-wrap: wrap;
     }
 
-    .shorten-form .form-wrapper input {
+    .shorten-form .form-wrapper .form-control {
         flex: 0 0 100%;
-        width: 100%;
-        border-radius: 7px;
+    }
+
+    .shorten-form .form-wrapper .form-control input {
+        flex: 0 0 100%;
 
     }
 
@@ -656,35 +708,7 @@ a {
         width: 80%;
     }
 
-    .more-features {
-        padding: 70px 0;
-    }
 
-    .more-features-content {
-        flex-wrap: wrap;
-    }
-
-    .more-features-content::after {
-        content: "";
-        top: 0;
-        left: 50%;
-        height: 100%;
-        transform: translateX(-50%);
-        width: 7px;
-    }
-
-    .content-item h3 {
-        font-size: 24px;
-    }
-
-    .content-item p {
-        font-size: 14px;
-    }
-
-    .content-item .item-icon {
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .boost-section {
         background-image: url(images/bg-boost-mobile.svg);
